@@ -1,70 +1,107 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Insurance Policy Management System - Frontend
+
+This repository contains the Frontend (FE) of the Insurance Policy Management System. Built with React, it provides a user-friendly interface for generating quotes, purchasing policies, and managing claims.
+
+## Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Running the Frontend](#running-the-frontend)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Security Considerations](#security-considerations)
+- [Testing](#testing)
+- [License](#license)
+- [Contact](#contact)
+
+## Features
+
+- **User Interface**: Responsive and intuitive UI built with React and Material-UI.
+- **User Authentication**: Registration and login.
+- **Quote Generation**: Multi-step form for quote generation.
+- **Policy Purchase**: Purchase policies.
+- **Claims Management**: File and view claims.
+- **Routing**: Client-side routing using React Router.
+
+## Prerequisites
+
+- **Node.js**: Version 14.x or later
+- **npm**: Version 6.x or later
+- **Git**: For cloning the repository
+
+## Installation
+
+Clone the Repository:
+
+```bash
+git clone https://github.com/saimanish1/insurance-frontend.git
+cd insurance-frontend
+```
+
+Install Dependencies:
+
+```bash
+npm install
+```
+
+## Environment Variables
+
+Create a `.env` file in the root directory and configure:
+
+```plaintext
+REACT_APP_API_BASE_URL=http://localhost:3000
+```
+
+Replace the URL if your backend API is running on a different port or URL.
+
+## Running the Frontend
+
+**Development Mode:**
+
+```bash
+npm start
+```
+
+**Production Build:**
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```plaintext
+src/
+├── components/          # Reusable components
+├── pages/               # Page components
+├── services/            # API service files
+├── App.js               # Main component
+└── index.js             # Entry point
+public/                  # Public assets
+package.json             # Dependencies and scripts
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start`: Start in development mode.
+- `npm run build`: Build for production.
+- `npm test`: Run tests.
+- `npm run eject`: Eject from Create React App (use cautiously).
 
-### `npm start`
+## Security Considerations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **JWT Authentication**: Secure authentication with tokens.
+- **Environment Variables**: API URL stored securely in `.env`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Testing
 
-### `npm test`
+Launch the test runner:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm test
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
